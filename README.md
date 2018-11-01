@@ -1,6 +1,7 @@
 ##### You can find the details about HazelCast and related clode by referring the below mentioned resources:
 
 PPT: https://www.slideshare.net/NexThoughts/hazelcast-120807730
+
 Github Repository: https://github.com/FintechLabs/hazel-cast-grails
  
 Here we'll see how to configure and have HazelCast running on our system whether it's local system or server as well.
