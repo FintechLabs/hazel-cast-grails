@@ -1,4 +1,4 @@
-##### You can find the details about HazelCast and related clode by referring the below mentioned resources:
+#### You can find the details about HazelCast and related clode by referring the below mentioned resources:
 
 PPT: https://www.slideshare.net/NexThoughts/hazelcast-120807730
 
