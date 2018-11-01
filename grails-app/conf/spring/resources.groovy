@@ -4,5 +4,11 @@ import com.hazelcast.HazelCastConfigBean
 beans = {
 
     hazelCastConfigBean(HazelCastConfigBean)
+//    listenerOne(ListenerOne) {
+//        hazelCastConfigBean = ref("hazelCastConfigBean")
+//    }
+//    listenerTwo(ListenerTwo) {
+//        hazelCastConfigBean = ref("hazelCastConfigBean")
+//    }
 
 }

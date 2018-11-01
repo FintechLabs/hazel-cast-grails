@@ -1,7 +1,9 @@
 package com.hazelcast1
 
+import com.hazelcast.Enums
 import com.hazelcast.HazelCastConfigBean
 import com.hazelcast.core.HazelcastInstance
+import com.hazelcast.core.ITopic
 
 class PersonController {
 
@@ -24,6 +26,13 @@ class PersonController {
         println("First customer: " + queueCustomers.poll())
         println("Second customer: " + queueCustomers.peek())
         println("Queue size: " + queueCustomers.size())
+
+        ITopic topicOne = hazelCastConfigBean.client.getTopic(Enums.HazelCastMessagingQueueName.QUEUE_ONE.name())
+        topicOne.publish(Person.first())
+
+        ITopic topictwo = hazelCastConfigBean.client.getTopic(Enums.HazelCastMessagingQueueName.QUEUE_TWO.name())
+        topictwo.publish(Person.last())
+
         [personList: Person.list()]
     }
 
